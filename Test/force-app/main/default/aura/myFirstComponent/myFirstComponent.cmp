@@ -1,0 +1,17 @@
+<aura:component controller = "MyContactListCtr" implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="greeting" type="String" default="Hello" access="global" />
+
+    <aura:attribute name="subject" type="String" default="World" access="global" />
+
+    <aura:attribute name = "childAttr" type = "String"/>
+
+     <!-- attributes -->
+     <aura:attribute name="contacts" type="List" />
+     <aura:attribute name="columns" type="List" />
+
+     <p>This is children: {!v.childAttr}</p>
+    
+    <lightning:button label="ChangeValue" onclick="{! c.changeVlaue}"/>
+
+</aura:component>

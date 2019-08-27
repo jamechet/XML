@@ -1,0 +1,9 @@
+<apex:page standardController="Account">
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="4">
+            <apex:outputField value="{! Account.Name}"/>
+            <apex:outputField value="{! Account.Phone}"/>
+            <apex:outputField value="{! Account.AccountNumber}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

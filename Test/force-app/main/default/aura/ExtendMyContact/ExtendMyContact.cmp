@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:attribute name = "mainString" type = "String"/>
+    <p>{! 'Hello' + v.mainString}</p>
+</aura:component>

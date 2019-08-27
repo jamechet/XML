@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name ="message" type = "String"/>
+    <aura:attribute name ="parnentAttr" type = "String" default = "Parent Attribute"/>
+    <p>This is parent: {! v.parnentAttr}</p>
+    <c:myFirstComponent childAttr="{#v.parnentAttr}"/>
+    <div>
+        <lightning:button label = "You look nice today." onclick="{!c.handleClick}"/>
+        <lightning:button label = "Today is going to be a great day!" onclick="{!c.handleClick}"/>
+    </div>
+    <!-- instantiate the child component-->
+
+</aura:component>
